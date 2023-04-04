@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: #212529;
+}
+
+header {
+  background-color: #fcc419;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 0.4rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #fcc419;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+nav a {
+  text-decoration: none;
+  margin-right: 0.6rem;
+  color: #212529;
+}
+
+nav a:hover {
+  color: #495057;
+}
+
+#sobre-a-loja {
+  padding: 2rem;
+}
+
+.img-loja {
+  max-width: 47%;
+  margin-right: 3%;
+}
+
+#produtos {
+  padding: 1.5rem;
+}
+
+#produtos img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.descrição-produto {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.cores {
+  display: flex;
+}
+
+.cores div {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+
+.cores p {
+  font-size: 0.9rem;
+  margin-right: 0.7rem;
+  font-weight: 700;
+}
+
+.cor-1 {
+  background-color: #868e96;
+}
+.cor-2 {
+  background-color: #1a1a1a;
+}
+.cor-3 {
+  background-color: #997950;
+}
+
+button {
+  width: 100%;
+  border: none;
+  background-color: #fcc419;
+  color: #f8f9fa;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  #sobre-a-loja .flex {
+    display: block;
+  }
+
+  .img-loja {
+    max-width: 100%;
+
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  header {
+    padding: 1rem 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    margin-right: 0;
+    margin-bottom: 0.3rem;
+  }
+
+  section {
+    margin-bottom: 1rem;
+  }
+
+  #sobre-a-loja p {
+    font-size: 0.8rem;
+  }
+}
